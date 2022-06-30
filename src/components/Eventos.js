@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Eventos extends Component {
+export class Eventos extends Component {
   state = {
     contador: 0,
   };
@@ -30,6 +30,46 @@ export default class Eventos extends Component {
             +
           </button>
         </nav>
+      </div>
+    );
+  }
+}
+
+const Boton = ({ myOnClick }) => (
+  <button
+    onClick={myOnClick}
+    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+  >
+    Botón hecho componente
+  </button>
+);
+
+export class MasSobreEventos extends Component {
+  handleClick = (e, mensaje) => {
+    console.log(e);
+    console.log(e.target);
+    console.log(mensaje);
+  };
+
+  render() {
+    return (
+      <div className="mb-11 ">
+        <h2 className="text-3xl">Mas Sobre Eventos</h2>
+        <button
+          onClick={(e) =>
+            this.handleClick(e, "Hola pasando parámetro desde un evento")
+          }
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+        >
+          Saludar
+        </button>
+        <br />
+        {/*Evento Personalizado*/}
+        <Boton
+          myOnClick={(e) =>
+            this.handleClick(e, "Hola pasando parámetro desde un evento")
+          }
+        />
       </div>
     );
   }

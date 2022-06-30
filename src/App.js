@@ -1,7 +1,8 @@
 import "App.css";
 
+import { Eventos, MasSobreEventos } from "components/Eventos";
+
 import Estado from "components/Estado";
-import Eventos from "components/Eventos";
 import Header from "components/Header";
 import Nav from "components/Nav";
 import Propiedades from "components/Propiedades";
@@ -28,6 +29,8 @@ function App() {
               <RenderizadoElementos />
               <hr />
               <Eventos />
+              <hr />
+              <MasSobreEventos />
             </div>
           </div>
         </div>
