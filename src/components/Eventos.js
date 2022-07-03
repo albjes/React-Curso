@@ -7,7 +7,7 @@ export class Eventos extends Component {
 
   sumar = (e) => {
     this.setState({
-      contador: this.state.contador + 2,
+      contador: this.state.contador + 1,
     });
   };
 
