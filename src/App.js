@@ -2,6 +2,9 @@ import "App.css";
 
 import { Eventos, MasSobreEventos } from "components/Eventos";
 
+import AjaxApis from "components/AjaxApis";
+import CicloVida from "components/CicloVida";
+import ComunicacionComponentes from "components/ComunicacionComponentes";
 import Estado from "components/Estado";
 import Header from "components/Header";
 import Nav from "components/Nav";
@@ -31,6 +34,12 @@ function App() {
               <Eventos />
               <hr />
               <MasSobreEventos />
+              <hr />
+              <ComunicacionComponentes />
+              <hr />
+              <CicloVida />
+              <hr />
+              <AjaxApis />
             </div>
           </div>
         </div>
