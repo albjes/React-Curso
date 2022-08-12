@@ -3,11 +3,11 @@ import React, { Component } from "react";
 class Reloj extends Component {
   constructor(props) {
     super(props);
-    console.log(100);
+    //console.log(100);
   }
 
   componentWillUnmount() {
-    console.log(3, "El Componente ha sido eliminado del DOM");
+    //console.log(3, "El Componente ha sido eliminado del DOM");
   }
 
   render() {
@@ -18,7 +18,7 @@ class Reloj extends Component {
 export default class CicloVida extends Component {
   constructor(props) {
     super(props);
-    console.log(0, "El Componente se inicializa, aun no está en el DOM");
+    //console.log(0, "El Componente se inicializa, aun no está en el DOM");
 
     this.state = {
       hora: new Date().toLocaleTimeString(),
@@ -29,13 +29,13 @@ export default class CicloVida extends Component {
   }
 
   componentDidMount() {
-    console.log(1, "El Componente ya se encuentra en el DOM");
+    //console.log(1, "El Componente ya se encuentra en el DOM");
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(2, "El estado o la props del Componente han cambiado");
-    console.log(prevProps);
-    console.log(prevState);
+    //console.log(2, "El estado o la props del Componente han cambiado");
+    //console.log(prevProps);
+    //console.log(prevState);
   }
 
   tictac = () => {
@@ -60,10 +60,7 @@ export default class CicloVida extends Component {
   };
 
   render() {
-    console.log(
-      4,
-      "El Componente se dibuja o redibuja por un cambio en el DOM"
-    );
+    //console.log(4,"El Componente se dibuja o redibuja por un cambio en el DOM");
     return (
       <div className="mb-11 ">
         <h2 className="text-3xl">Ciclo de Vida de Componentes de Clases</h2>
