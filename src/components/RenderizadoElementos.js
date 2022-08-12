@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import data from "helpers/data.json";
 
 function ElementoLista(props) {
@@ -19,7 +20,7 @@ export default class RenderizadoElementos extends Component {
     };
   }
   render() {
-    console.log(data);
+    //console.log(data);
     return (
       <div className="mb-11">
         <h2 className="text-3xl">Renderizado Elementos</h2>

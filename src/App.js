@@ -2,19 +2,24 @@ import "App.css";
 
 import { Eventos, MasSobreEventos } from "components/Eventos";
 
-import AjaxApis from "components/AjaxApis";
+import AjaxApisHooks from "components/AjaxApisHooks";
 import CicloVida from "components/CicloVida";
 import ComunicacionComponentes from "components/ComunicacionComponentes";
 import ContadorHooks from "components/ContadorHooks";
 import Estado from "components/Estado";
+import Formularios from "components/Formularios";
 import Header from "components/Header";
+import HooksPersonalizados from "components/HooksPersonalizados";
 import Nav from "components/Nav";
 import Propiedades from "components/Propiedades";
 import React from "react";
+import Referencias from "components/Referencias";
 import RelojHooks from "components/RelojHooks";
 import RenderizadoCondicional from "components/RenderizadoCondicional";
 import RenderizadoElementos from "components/RenderizadoElementos";
 import ScrollHooks from "components/ScrollHooks";
+
+//import AjaxApis from "components/AjaxApis";
 
 function App() {
   let msg = "Ejercicios React";
@@ -42,13 +47,21 @@ function App() {
               <hr />
               <CicloVida />
               <hr />
-              <AjaxApis />
+              {/* <AjaxApis /> */}
               <hr />
               <ContadorHooks />
               <hr />
               <ScrollHooks />
               <hr />
               <RelojHooks />
+              <hr />
+              <AjaxApisHooks />
+              <hr />
+              <HooksPersonalizados />
+              <hr />
+              <Referencias />
+              <hr />
+              <Formularios />
             </div>
           </div>
         </div>

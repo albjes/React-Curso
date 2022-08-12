@@ -9,12 +9,12 @@ export default function ScrollHooks() {
   }, [scrollY]);
 
   useEffect(() => {
-    console.log("Fase de Montaje");
+    //console.log("Fase de Montaje");
   }, []);
 
   useEffect(() => {
     return () => {
-      console.log("Fase de Desmontaje");
+      //console.log("Fase de Desmontaje");
     };
   });
 
