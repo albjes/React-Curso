@@ -9,13 +9,13 @@ export const useFetch = (url) => {
     const getData = async (url) => {
       try {
         let res = await fetch(url);
-
+        const errorMessage = {
+          err: true,
+          status: res.status,
+          statusText: !res.statusText ? "Ocurrió un error" : res.statusText,
+        };
         if (!res.ok) {
-          throw {
-            err: true,
-            status: res.status,
-            statusText: !res.statusText ? "Ocurrió un error" : res.statusText,
-          };
+          throw errorMessage;
         }
         let data = await res.json();
         setIsPending(false);

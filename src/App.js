@@ -1,4 +1,6 @@
 import "App.css";
+import "./components/Estilos.css";
+import "./components/Estilos.scss";
 
 import { Eventos, MasSobreEventos } from "components/Eventos";
 
@@ -7,6 +9,7 @@ import CicloVida from "components/CicloVida";
 import ComunicacionComponentes from "components/ComunicacionComponentes";
 import ContadorHooks from "components/ContadorHooks";
 import Estado from "components/Estado";
+import Estilos from "components/Estilos";
 import Formularios from "components/Formularios";
 import Header from "components/Header";
 import HooksPersonalizados from "components/HooksPersonalizados";
@@ -28,40 +31,55 @@ function App() {
       <Nav />
       <Header msg={msg} />
       <main>
-        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <div className="px-4 py-6 sm:px-0">
-            <div className="border-4 border-dashed border-gray-200 rounded-lg h-auto p-4">
-              <Propiedades />
-              <hr />
-              <Estado />
-              <hr />
-              <RenderizadoCondicional />
-              <hr />
-              <RenderizadoElementos />
-              <hr />
-              <Eventos />
-              <hr />
-              <MasSobreEventos />
-              <hr />
-              <ComunicacionComponentes />
-              <hr />
-              <CicloVida />
-              <hr />
+        <div className="container mx-auto px-6 p-6 bg-white dark:bg-gray-800">
+          <div className="border-4 border-dashed border-gray-200 rounded-lg h-auto p-4 ">
+            <div className="flex flex-wrap my-12 dark:text-white">
+              <Estilos title="Propiedades">
+                <Propiedades />
+              </Estilos>
+              <Estilos title="Estado">
+                <Estado />
+              </Estilos>
+              <Estilos title="RenderizadoCondicional">
+                <RenderizadoCondicional />
+              </Estilos>
+              <Estilos title="RenderizadoElementos">
+                <RenderizadoElementos />
+              </Estilos>
+              <Estilos title="Eventos">
+                <Eventos />
+              </Estilos>
+              <Estilos title="MasSobreEventos">
+                <MasSobreEventos />
+              </Estilos>
+              <Estilos title="ComunicacionComponentes">
+                <ComunicacionComponentes />
+              </Estilos>
+              <Estilos title="CicloVida">
+                <CicloVida />
+              </Estilos>
               {/* <AjaxApis /> */}
-              <hr />
-              <ContadorHooks />
-              <hr />
-              <ScrollHooks />
-              <hr />
-              <RelojHooks />
-              <hr />
-              <AjaxApisHooks />
-              <hr />
-              <HooksPersonalizados />
-              <hr />
-              <Referencias />
-              <hr />
-              <Formularios />
+              <Estilos title="ContadorHooks">
+                <ContadorHooks />
+              </Estilos>
+              <Estilos title="ScrollHooks">
+                <ScrollHooks />
+              </Estilos>
+              <Estilos title="RelojHooks">
+                <RelojHooks />
+              </Estilos>
+              <Estilos title="AjaxApisHooks">
+                <AjaxApisHooks />
+              </Estilos>
+              <Estilos title="HooksPersonalizados">
+                <HooksPersonalizados />
+              </Estilos>
+              <Estilos title="Referencias">
+                <Referencias />
+              </Estilos>
+              <Estilos title="Formularios">
+                <Formularios />
+              </Estilos>
             </div>
           </div>
         </div>

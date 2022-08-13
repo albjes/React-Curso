@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 function Pokemon({ avatar, name }) {
   return (
     <figure>
-      <img src={avatar} alt={name} />
+      <img className="m-auto" src={avatar} alt={name} />
       <figcaption>{name}</figcaption>
     </figure>
   );
@@ -38,13 +38,17 @@ export default function AjaxApisHooks() {
   return (
     <div className="mb-11">
       <h2 className="text-3xl">Peticiones Asincronas con HOOKS</h2>
-      {pokemons.length === 0 ? (
-        <h3>Cargando...</h3>
-      ) : (
-        pokemons.map((el) => (
-          <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
-        ))
-      )}
+      <div className="w-full border-b md:border-r p-8">
+        <div className="flex flex-wrap items-center mb-6">
+          {pokemons.length === 0 ? (
+            <h3>Cargando...</h3>
+          ) : (
+            pokemons.map((el) => (
+              <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
+            ))
+          )}
+        </div>
+      </div>
     </div>
   );
 }
