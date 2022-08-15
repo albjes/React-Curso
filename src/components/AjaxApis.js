@@ -42,7 +42,7 @@ export default class AjaxApis extends Component {
     return (
       <div className="mb-11">
         <h2 className="text-3xl">
-          Peticiones Asincronas en Componentes de Clases
+          Peticiones Asincrona en Componentes de Clases
         </h2>
         {this.state.pokemons.length === 0 ? (
           <h3>Cargando...</h3>
